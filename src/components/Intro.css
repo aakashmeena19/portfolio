@@ -1,0 +1,62 @@
+.intro{
+    margin-left: 70px;
+    margin-top: 150px;
+}
+
+.akash{
+    font-style:italic;
+    color: red;
+    text-decoration:color(srgb red green blue);
+    text-decoration: dotted;
+}
+
+.welcome{
+    color: rgb(204, 178, 144);
+}
+
+.introBtn{
+  margin-top: 20px ;
+  height: 38px;
+  width: 100px;
+  border: solid red 1px;
+  border-radius: 5px;
+ 
+  background:rgba(22,10,14,255);
+  color: white;
+  margin-right: 70px;
+}
+
+.logo2{
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    z-index: -1;
+    height: 300px;
+    /* border-radius: 50%; */
+    object-fit: cover;
+    /* border: 2px  solid red; */
+    
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo2{
+        animation: logo2-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo2-spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* 
+
+@media screen and (max-width:840px){
+    .logo2{
+        height:16em;
+        opacity: 0.3;
+    }
+} */

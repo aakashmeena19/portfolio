@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent url;
+       
+    
+   
+}
+
+body{
+    background:rgba(22,10,14,255);
+    /* background-color: cadetblue; */
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+
+   
+}
+/* 
+button{
+    height: 38px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: white;
+    background:rgba(22,10,14,255);
+    color: white;
+    margin-right: 70px;
+} */
+
+.btn:hover{
+    color: red;
+    border: solid red 3px;
+}
+
