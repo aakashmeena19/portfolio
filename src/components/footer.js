@@ -4,7 +4,7 @@ import './footer.css'
 function footer() {
   return (
 <footer className='footer'>
-    copyright #22001;20024 Akash Meena.All Right Reserved.
+Copyright &#169; 2024 AkashPortfolio All Right Reserved.
 </footer>
   )
 }

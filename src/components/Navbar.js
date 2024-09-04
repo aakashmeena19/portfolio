@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import './Navbar.css'
-import Logo from '../assets/WhatsApp Image 2024-08-17 at 12.24.50_de676dc6.jpg'
+import Logo from '../assets/Akashportfoliologo.jpg'
 import Contact from '../assets/WhatsApp Image 2024-08-17 at 11.18.07_23380a60.jpg'
-import Menu from '../newassets/WhatsApp Image 2024-08-23 at 08.53.44_f27f15ff.jpg'
+import Menu from '../assets/newnavbaar.png'
 import{ Link } from 'react-scroll'
 
 function Navbar() {

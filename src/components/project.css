@@ -41,7 +41,7 @@
     overflow: hidden;
     margin: 1.5rem;
     border-radius: 12px;
-    border: 1px;
+    border:1px solid rgb(228, 75, 103);
 }
 
 .item-details{
@@ -51,9 +51,10 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background: #14131a;
+ 
+    background:black;
     border: 0.5px;
-    z-index: 1;
+    z-index: 10;
 
 }
 
@@ -67,11 +68,15 @@
 
     border: 1px;
 
-    z-index: -1;
+    z-index: 10;
 
     border-radius: 12px;
 }
+.projectshadow{
+    box-shadow:rgb(236, 16, 85);
+box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
 
+}
 .item-details .P1{
     text-align: center;
     margin: 0.5rem 0.5rem;
@@ -81,7 +86,7 @@
 
 .item-details .P2{
     text-align: center;
-    color: rgb(175,168,168,0.966);
+    color:white;
     margin-left: 0.8rem;
     font-size: 1rem;
     letter-spacing: 0.4px;
@@ -94,6 +99,7 @@
     transition: all 0.2s;
 
     transform: scale(1.1);
+   
 }
 
 
@@ -116,6 +122,10 @@
         
         }
      }
+
+
+
+  
 
 /* 
      @media  screen and (max-width: 430px) {

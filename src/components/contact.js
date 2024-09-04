@@ -3,7 +3,7 @@ import './contact.css'
 import linkedin from '../assets/linkedinportfolio.png'
 import Instagram from '../assets/instaportfolio.png'
 import Github from '../assets/githubpotfolio.png'
-import Faceboook from '../assets/facebookportfolio.png'
+
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -37,12 +37,10 @@ function Contact() {
 
 <div className='socialImgs'>
 
-<a href='https://www.linkedin.com/in/aakash-meena-081227322/'><img src = {linkedin} alt ='Social' className='socialImg'/></a>
-<a href='https://www.instagram.com/aakash_meena1234/'><img src = {Github} alt ='Social' className='socialImg'/></a>
+<a href='https://www.linkedin.com/in/akash-meena-081227322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><img src = {linkedin} alt ='Social' className='socialImg'/></a>
+<a href='https://github.com/aakashmeena19'><img src = {Github} alt ='Social' className='socialImg'/></a>
+<a href='https://www.instagram.com/aakash_meena1234/'><img src = {Instagram} alt ='Social' className='socialImg1'/></a>
 
-
-<a href='https://www.instagram.com/aakash_meena1234/'><img src = {Instagram} alt ='Social' className='socialImg'/></a>
-<a href='https://www.instagram.com/aakash_meena1234/'><img src = {Faceboook} alt ='Social' className='socialImg'/></a>
 
 
 
@@ -51,14 +49,13 @@ function Contact() {
 
 </div>
 <div id ='contactPage'>
-    <h1 className='contactTitle'>Contact</h1>
+    <h1 className="socialTitle">Contact</h1>
     <span className='contactDesc'>Feel free to contact me</span>
 
     <form className='contactForm' ref={form} onSubmit={sendEmail}>
         <input type='text' name='from_name'className='name' placeholder='Your Full Name'required/>
-        <input type='email' name='your_email'className='email' placeholder='Your Email'/>
-        <textarea className='msg' name='message'rows = "5" placeholder='Your Message'></textarea>
-        <button type = "submit" value="Send" className='submitBtn' onClick={()=>{alert('Your Form is Submitted')}}>Submit</button>
+        <input type='email' name='your_email'className='email' placeholder='Your Email'required/>
+        <textarea className='msg' name='message'rows = "5" placeholder='Your Message'required></textarea>        <button type = "submit" value="Send" className='submitBtn' onClick={()=>{alert('Your Form is Submitted to Akash')}}>Submit</button>
 
 
 

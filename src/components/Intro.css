@@ -1,8 +1,12 @@
 .intro{
-    margin-left: 70px;
-    margin-top: 150px;
+    margin-left: 50px;
+    margin-top: 300px;
 }
-
+#intro0{
+    height: 300px;
+    box-shadow:rgb(236, 16, 85);
+box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
+}
 .akash{
     font-style:italic;
     color: red;
@@ -11,32 +15,42 @@
 }
 
 .welcome{
-    color: rgb(204, 178, 144);
+    color: rgb(243, 143, 12);
+}
+
+.btnImg{
+    border-radius:
 }
 
 .introBtn{
-  margin-top: 20px ;
-  height: 38px;
-  width: 100px;
-  border: solid red 1px;
-  border-radius: 5px;
- 
-  background:rgba(22,10,14,255);
-  color: white;
-  margin-right: 70px;
+    height: 10px;
+ margin-top: 50px;
+  border-radius: 2px;
+ border: 2px solid rgb(250, 12, 167);
+  background:rgb(210, 230, 238);
+  color: rgb(226, 83, 162);
+
 }
 
+.introBtn:hover{
+    background-color: rgb(245, 8, 32);
+    color: white;
+}
+
+
+    @media screen and (min-width:810px){
+    
 .logo2{
     position: absolute;
     top: 150px;
     right: 200px;
     z-index: -1;
     height: 300px;
-    /* border-radius: 50%; */
+   
     object-fit: cover;
-    /* border: 2px  solid red; */
     
 }
+    }
 
 @media (prefers-reduced-motion: no-preference) {
     .logo2{
@@ -52,11 +66,21 @@
         transform: rotate(360deg);
     }
 }
-/* 
 
-@media screen and (max-width:840px){
-    .logo2{
-        height:16em;
+
+@media screen and (max-width:810px){
+    
+         
+.logo2{
+    position: absolute;
+    top: 150px;
+    
+    right: 30px;
+    z-index: -1;
+    height: 300px;
+ 
+    object-fit: cover;
+    
         opacity: 0.3;
     }
-} */
+}

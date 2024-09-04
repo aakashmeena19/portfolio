@@ -16,12 +16,15 @@ import reactlogo from '../newassets/IMG-20240822-WA0015.jpg'
 
 function About() {
 return (
+    <div className='aboutshadow'>
     <section id ='about'>
+       
         <span className='aboutTitle'>What I know</span>
 {
-        //   <span className='aboutDesc'>I am a skilled and passionate web designer with experience in creating in creating visually appealing</span>
+          <span className='aboutDesc'>I am a skilled and passionate web designer with experience in creating in creating visually appealing.</span>
          
          }
+         
         
         <div className='aboutBars'> 
 
@@ -142,7 +145,9 @@ return (
 
 
              </div>
+           
    </section>
+   </div>
   )
 }
 

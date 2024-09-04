@@ -12,19 +12,24 @@
  
 .aboutTitle{
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
 }
 
 .aboutDesc{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
     max-width: 50rem;
     padding: 0.2rem;
 
 }
 
+.aboutshadow{
+ 
+    box-shadow:rgb(236, 16, 85);
+box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
+}
 
 .aboutBars{
     margin:1.5rem;
@@ -38,12 +43,16 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: rgb(40,40,40);
+
+    background: rgb(234, 228, 230);
+    border: 1px solid rgb(236, 16, 85);
 }
 
 .aboutBar:hover{
     transition: all 0.2s;
     transform: scale(1.1);
+    background-color: rgb(236, 16, 85);
+    
 }
 
 .aboutBarImg{
@@ -52,9 +61,17 @@
     width: 3rem;
     margin-right: 2rem;
 }
+.aboutBar:hover{
+    color: white;
+    p{
+        color: aliceblue;
+    }
+}
+
 
 .aboutBarText>p{
-    color: aliceblue;
+  
+    color: rgb(236, 16, 85);
     font-size: 1rem;
     font-weight: 200;
 }

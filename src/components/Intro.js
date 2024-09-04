@@ -14,18 +14,14 @@ function Intro() {
       
       <h6>I’m passionate about full-stack development, where I craft seamless<br></br> and dynamic web applications from start to finish. </h6>
       <h6>Full-stack development involves working on both the front-end and<br></br> back-end of web projects, combining a diverse skill set to deliver complete, functional solutions.</h6>
-      { <a href='https://www.linkedin.com/in/aakash-meena-081227322/' class = "introBtn">
-    <img src ={img} alt='Contact Me'  className='btnImg'/>Hire Me! </a> }
+       <a href='https://www.linkedin.com/in/akash-meena-081227322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' class = "introBtn">
+    <img src ={img} alt='Contact Me'  className='btnImg' />Hire Me! </a> 
 
 
-    {/* <link to ="">
-    <button className = "introBtn">
-        <img src={img} alt = "img" className='introBtn'/>
-    </button>
-    </link> */}
     </div>
-
+<div className='mobilediv'>
     <img src={reactImg} className='logo2' alt = "raact img"/>
+    </div>
     </section>
    
     

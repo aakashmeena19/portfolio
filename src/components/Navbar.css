@@ -1,8 +1,8 @@
 .navbar{
-
-height: 5rem;
-width: 100vw;
-max-width: 75rem;
+height: 80px;
+/* height: 5rem; */
+/* width: 100VW; */
+/* max-width: 75rem; */
 margin: 0 auto;
 padding: 1rem 2rem;
 display: flex;
@@ -11,7 +11,11 @@ justify-content: center;
 justify-content: space-between;
 position: sticky;
 top:0;
-z-index: 3;
+background-color: white;
+z-index: 20;
+box-shadow:rgb(236, 16, 85);
+box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
+
 
 }
 
@@ -19,16 +23,16 @@ z-index: 3;
 
 
 .logo{
-     height: 90px; 
-    border: 1px solid rgb(78, 30, 17);
-    border-radius: 10px;
-    margin-left: 70px;
+     height: 50px; 
+    
+    
+    margin-left: 10px;
     
 }
 
 
 .nav-links-items{
-    margin: 30px;
+    margin: 40px;
 }
 
 
@@ -37,28 +41,25 @@ z-index: 3;
     color: red;
     padding-bottom:5px;
     border-bottom: 3px solid red;
+    font-size: larger;
+
+   
 
 }
-/* 
-.nav-links{
- 
- 
-  position: fixed
-}
- */
+
 
 .navMenu{
   position: absolute;
-  top: 4rem;
-  right: 2rem;
+  top: 5rem;
+  right: 1rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
   height: fit-content;
   min-width: 15rem;
-  background: rgb(20,20,20);
-  border-radius: 1rem;
+  background: rgb(236, 16, 85);
+  border-radius: 5%;
 
 }
 
@@ -66,12 +67,19 @@ z-index: 3;
   
 
   height: 38px;
-  width: 100px;
+  width: 130px;
   border-radius: 5px;
   border-color: red;
-  background:rgba(22,10,14,255);
+  color: rgb(236, 16, 85);
+  
+  margin-right: 10px;
+}
+
+.btn:hover{
+  background-color:rgb(236, 16, 85); 
   color: white;
-  margin-right: 70px;
+  height: 42px;
+  width: 135px;
 }
 
 
@@ -80,7 +88,7 @@ z-index: 3;
 .btnImg{
     height: 20px;
     margin-top: 2px;
-    border: solid black 2px;
+    border: solid rgb(236, 16, 85) 2px;
     border-radius: 5px;
     }
 
@@ -88,7 +96,7 @@ z-index: 3;
     height: 50px;
     border-radius: 50%;
     
-    border: solid white 2px;
+    
   }
 
   .mobMenu{
@@ -100,12 +108,16 @@ z-index: 3;
 
   
   .Menu-item{
-    color: white;
-    
-
+    color: rgb(236, 16, 85) 2px;
     padding:0.5rem 3rem;
     margin: 0.25rem;
-    background-color: rgb(30,30,30);
+    background-color:rgb(250, 208, 221) ;
+   
+  }
+
+  .Menu-item:hover{
+    font-weight:bold;
+    background-color: white;
   }
 
 

@@ -5,10 +5,11 @@ import currency from '../newassets/WhatsApp Image 2024-08-23 at 09.06.31_723bb35
 import net from '../newassets/WhatsApp Image 2024-08-23 at 09.06.30_bf334095.jpg'
 function project() {
   return (
+    <div className='projectshadow'>
   <section id = "project">
 
-<h2 className='projectTitle'>My Project</h2>
-<span className='projectDesc'>Here are my project</span>
+<h2 className='projectTitle'>My Projects</h2>
+<span className='projectDesc'>Here are my projects</span>
 
 
 
@@ -43,6 +44,7 @@ function project() {
 
 
   </section>
+  </div>
   )
 }
 
