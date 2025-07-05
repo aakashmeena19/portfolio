@@ -1,10 +1,8 @@
-import React from 'react'
-import './contact.css'
-import linkedin from '../assets/linkedinportfolio.png'
-import Instagram from '../assets/instaportfolio.png'
-import Github from '../assets/githubpotfolio.png'
-
-import { useRef } from 'react';
+import React, { useRef } from 'react';
+import './contact.css';
+import linkedin from '../assets/linkedinportfolio.png';
+import Instagram from '../assets/instaportfolio.png';
+import Github from '../assets/githubpotfolio.png';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
@@ -19,59 +17,48 @@ function Contact() {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert('✅ Your form has been successfully submitted to Akash!');
+          form.current.reset(); // Clear form after success
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          alert('❌ Something went wrong. Please try again later.');
+          console.error('FAILED...', error.text);
+        }
       );
   };
 
-
   return (
-   <section id ='contact'>
-<div id ='social'>
+    <section id='contact'>
+      <div id='social'>
+        <h1 className='socialTitle'>Social</h1>
+        <p className='socialDesc'>Here you can connect with me on my social media</p>
 
-<h1 className='socialTitle'>Social</h1>
-<p className='socialDesc'>Here you can connect with me on my social media</p>
+        <div className='socialImgs'>
+          <a href='https://www.linkedin.com/in/akash-meena-081227322' target='_blank' rel='noopener noreferrer'>
+            <img src={linkedin} alt='LinkedIn' className='socialImg' />
+          </a>
+          <a href='https://github.com/aakashmeena19' target='_blank' rel='noopener noreferrer'>
+            <img src={Github} alt='GitHub' className='socialImg' />
+          </a>
+          <a href='https://www.instagram.com/aakash_meena1234/' target='_blank' rel='noopener noreferrer'>
+            <img src={Instagram} alt='Instagram' className='socialImg1' />
+          </a>
+        </div>
+      </div>
 
-<div className='socialImgs'>
+      <div id='contactPage'>
+        <h1 className='socialTitle'>Contact</h1>
+        <span className='contactDesc'>Feel free to contact me</span>
 
-<a href='https://www.linkedin.com/in/akash-meena-081227322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><img src = {linkedin} alt ='Social' className='socialImg'/></a>
-<a href='https://github.com/aakashmeena19'><img src = {Github} alt ='Social' className='socialImg'/></a>
-<a href='https://www.instagram.com/aakash_meena1234/'><img src = {Instagram} alt ='Social' className='socialImg1'/></a>
-
-
-
-
-
-</div>
-
-</div>
-<div id ='contactPage'>
-    <h1 className="socialTitle">Contact</h1>
-    <span className='contactDesc'>Feel free to contact me</span>
-
-    <form className='contactForm' ref={form} onSubmit={sendEmail}>
-        <input type='text' name='from_name'className='name' placeholder='Your Full Name'required/>
-        <input type='email' name='your_email'className='email' placeholder='Your Email'required/>
-        <textarea className='msg' name='message'rows = "5" placeholder='Your Message'required></textarea>        <button type = "submit" value="Send" className='submitBtn' onClick={()=>{alert('Your Form is Submitted to Akash')}}>Submit</button>
-
-
-
-
-
-    </form>
-
-
-
-</div>
-
-
-
-
-</section>
-  )
+        <form className='contactForm' ref={form} onSubmit={sendEmail}>
+          <input type='text' name='from_name' className='name' placeholder='Your Full Name' required />
+          <input type='email' name='your_email' className='email' placeholder='Your Email' required />
+          <textarea className='msg' name='message' rows='5' placeholder='Your Message' required />
+          <button type='submit' className='submitBtn'>Submit</button>
+        </form>
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;

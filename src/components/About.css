@@ -1,97 +1,99 @@
-#about{
-    overflow: hidden;
-    width: 100vw;
-    max-width:65rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
- 
-.aboutTitle{
-    font-size: 3rem;
-    font-weight: 700;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+#about {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.aboutDesc{
-    font-weight: 500;
+.aboutshadow {
+  box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1),
+              0 2px 4px -1px rgba(244, 10, 10, 0.06);
+}
+
+.aboutTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.aboutDesc {
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+}
+
+.aboutBars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.aboutBar {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  background-color: #f7f3f4;
+  border: 1px solid rgb(236, 16, 85);
+  transition: 0.3s ease;
+}
+
+.aboutBar:hover {
+  background-color: rgb(236, 16, 85);
+  color: white;
+  transform: scale(1.05);
+}
+
+.aboutBarImg {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.aboutBarText h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.aboutBarText p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(236, 16, 85);
+}
+
+.aboutBar:hover .aboutBarText p {
+  color: white;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 600px) {
+  .aboutTitle {
+    font-size: 2.2rem;
+  }
+
+  .aboutDesc {
+    font-size: 0.95rem;
+  }
+
+  .aboutBarImg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutBarText h2 {
     font-size: 1rem;
-    max-width: 50rem;
-    padding: 0.2rem;
+  }
 
-}
-
-.aboutshadow{
- 
-    box-shadow:rgb(236, 16, 85);
-box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
-}
-
-.aboutBars{
-    margin:1.5rem;
-    width:100vw;
-    max-width: 80%;
-    text-align: left;
-}
-
-.aboutBar{
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-
-    background: rgb(234, 228, 230);
-    border: 1px solid rgb(236, 16, 85);
-}
-
-.aboutBar:hover{
-    transition: all 0.2s;
-    transform: scale(1.1);
-    background-color: rgb(236, 16, 85);
-    
-}
-
-.aboutBarImg{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
-}
-.aboutBar:hover{
-    color: white;
-    p{
-        color: aliceblue;
-    }
-}
-
-
-.aboutBarText>p{
-  
-    color: rgb(236, 16, 85);
-    font-size: 1rem;
-    font-weight: 200;
-}
-
-@media  screen and (max-width: 720px){
-    .aboutBarText>p{
-        font-size: 2vw;
-    }
-}
-
-@media screen and (max-width: 580px){
-    .aboutBarText>p{
-        font-size: 3vw;
-    }
-    .aboutBarImg{
-        height: 2rem;
-        width: 2rem;
-
-    }
-    .aboutBarText>h2{
-        font-size: 4vw;
-    }
+  .aboutBarText p {
+    font-size: 0.8rem;
+  }
 }

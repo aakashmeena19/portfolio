@@ -4,150 +4,46 @@ import Html from '../assets/IMG-20240816-WA0011.jpg'
 import css from '../assets/IMG-20240816-WA0012.jpg'
 import js from '../assets/IMG-20240816-WA0009.jpg'
 import java from '../newassets/IMG-20240822-WA0012.jpg'
-import cplus from '../newassets/IMG-20240822-WA0013.jpg'
-import c from '../newassets/IMG-20240822-WA0009.jpg'
 import github from '../newassets/IMG-20240822-WA0010.jpg'
 import nodejs from '../newassets/IMG-20240822-WA0011.jpg'
 import mongodb from '../newassets/IMG-20240822-WA0014.jpg'
 import bootstrap from '../newassets/IMG-20240822-WA0016.jpg'
 import reactlogo from '../newassets/IMG-20240822-WA0015.jpg'
-
-
+import expressjs from '../assets/pngwing.com.png'
 
 function About() {
-return (
+  return (
     <div className='aboutshadow'>
-    <section id ='about'>
-       
-        <span className='aboutTitle'>What I know</span>
-{
-          <span className='aboutDesc'>I am a skilled and passionate web designer with experience in creating in creating visually appealing.</span>
-         
-         }
-         
-        
-        <div className='aboutBars'> 
+      <section id='about'>
+        <span className='aboutTitle'>What I Know</span>
+        <span className='aboutDesc'>I am a skilled and passionate web developer with experience in creating visually appealing and responsive websites.</span>
 
+        <div className='aboutBars'>
 
+          {[ // Skill Data Array
+            { img: Html, title: 'HTML', desc: 'HyperText Markup Language' },
+            { img: css, title: 'CSS', desc: 'Cascading Style Sheets' },
+            { img: js, title: 'JavaScript', desc: 'JS for Web Logic' },
+            { img: github, title: 'GitHub', desc: 'Code Hosting Platform' },
+            { img: nodejs, title: 'Node.js', desc: 'JavaScript Runtime' },
+            { img: expressjs, title: 'Express.js', desc: 'Backend Framework' },
+            { img: mongodb, title: 'MongoDB', desc: 'NoSQL Database' },
+            { img: bootstrap, title: 'Bootstrap', desc: 'CSS Framework' },
+            { img: reactlogo, title: 'React.js', desc: 'Frontend Library' },
+            { img: java, title: 'Java', desc: 'OOP Language' },
+          ].map((skill, index) => (
+            <div className='aboutBar' key={index}>
+              <img src={skill.img} alt={skill.title} className='aboutBarImg' />
+              <div className='aboutBarText'>
+                <h2>{skill.title}</h2>
+                <p>{skill.desc}</p>
+              </div>
+            </div>
+          ))}
 
-
-            <div className='aboutBar'> 
-                 <img src = {Html} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>HTML</h2>
-                     <p>Hypertext Markup Language</p>
-                 </div>
-             </div>
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {css} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>CSS</h2>
-                     <p>Cascading Style Sheets</p>
-                 </div>
-             </div>
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {js} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>JS</h2>
-                     <p>JavaScript</p>
-                 </div>
-             </div>
-
-
-             <div className='aboutBar'> 
-                 <img src = {java} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>Java</h2>
-                     <p>Java</p>
-                 </div>
-             </div>
-
-
-             <div className='aboutBar'> 
-                 <img src = {cplus} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>C++</h2>
-                     <p>C++</p>
-                 </div>
-             </div>
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {c} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>C</h2>
-                     <p>C</p>
-                 </div>
-             </div>
-
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {github} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>Git Hub</h2>
-                     <p>Git Hub</p>
-                 </div>
-             </div>
-
-
-             <div className='aboutBar'> 
-                 <img src = {nodejs} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>Node JS</h2>
-                     <p>Node Js</p>
-                 </div>
-             </div>
-
-
-             
-
-             <div className='aboutBar'> 
-                 <img src = {mongodb} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>Mongo DB</h2>
-                     <p>Mongo DB</p>
-                 </div>
-             </div>
-
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {bootstrap} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>BootStrap</h2>
-                     <p>BootStrap</p>
-                 </div>
-             </div>
-
-
-
-
-
-             <div className='aboutBar'> 
-                 <img src = {reactlogo} alt="html" className='aboutBarImg'/>
-                 <div className='aboutBarText'>
-                     <h2>React js</h2>
-                     <p>React js</p>
-                 </div>
-             </div>
- 
-
-
-
-             </div>
-           
-   </section>
-   </div>
+        </div>
+      </section>
+    </div>
   )
 }
 

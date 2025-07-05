@@ -1,142 +1,146 @@
-#contact{
-    min-height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 60rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 1rem;
+#contact {
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-
-.socialTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 0.8rem;
+#social {
+  padding: 2rem 1rem;
+  width: 100%;
 }
 
-.socialDesc{
-    padding: 0.5rem;
-    margin-bottom: 3rem;
-    font-size: medium;
-    font-weight: 300;
+.socialTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
-.socialImgs{
-    margin: 1rem 0;
-    /* display: flex; */
-    flex-wrap: wrap;
-    
+.socialDesc {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.socialImgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .socialImg{
-    object-fit: cover;
-    width: 40px;
-   min-width: 7rem;
-    margin: auto;
-    padding: 0.50rem;
-    /* border-radius: 50%; */
-
-
+     width: 70px;
+  height: 70px;
+  padding: 0.6rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  object-fit: contain;
 
 }
 
-
-.socialImg1{
-    object-fit: cover;
-    width: 20px;
-   min-width: 5.4rem;
-    margin: auto;
-    padding: 0.50rem;
-    margin-bottom: 10px;
-    margin-left: 13px;
-    /* border-radius: 50%; */
+.socialImg1 {
+  width: 55px;
+  height: 55px;
+  padding: 0.6rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  object-fit: contain;
 }
 
-
-.socialImg:hover{
-    transform: scale(1.5) ;
-    transition: all 0.2s;
-border-bottom: 2px solid rgb(236, 16, 85);
+.socialImg:hover,
+.socialImg1:hover {
+  transform: scale(1.2);
+  /* border-bottom: 2px solid rgb(236, 16, 85); */
 }
 
-.socialImg1:hover{
-    transform: scale(1.5) ;
-    transition: all 0.2s;
-    border-bottom: 2px solid rgb(236, 16, 85);
+#contactPage {
+  width: 100%;
+  padding: 1rem;
 }
 
-#social{
-    padding: 2rem;
+.contactDesc {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-#contactTitle2{
-    font-size: 2px;
-    font-weight: 700;
-    padding-top: 30rem;
-    margin-bottom: 0.8rem1;
-    color: aliceblue;
+.contactForm {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  max-width: 40rem;
 }
 
-.contactDesc{
-    font-weight: 400;
+.name,
+.email,
+.msg {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background: rgb(40, 40, 40);
+}
+
+.submitBtn {
+  background: rgb(236, 16, 85);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.submitBtn:hover {
+  background: rgb(180, 0, 50);
+  transform: scale(1.05);
+}
+
+/* 🔽 Mobile Responsive Fixes */
+@media screen and (max-width: 580px) {
+  .socialImg{
+    width: 65px;
+    height: 65px;
+  }
+  .socialImg1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .submitBtn {
     font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .socialTitle {
+    font-size: 2rem;
+  }
 }
 
-.contactForm{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-width: 60rem;
-
-}
-
-.name, .email , .msg{
-    font-size: medium;
-    width: 100%;
-    max-width: 40rem;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background: rgb(40,40,40);
-}
-
-.submitBtn{
-    background: rgb(231, 167, 178);
-   border:solid black 1px;
-    border-radius:10px;
-    margin: 2rem;
-    padding: 0.75rem 3.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.submitBtn:hover{
-    background:rgb(236, 16, 85);
-    color: white;
-
-}
-
-@media screen and (max-width:580px){
-    .socialImg{
-        min-width: 18vw
-    }
-}
-
-@media screen and (max-width: 420px){
-    .socialImg{
-        min-width: 30vw;
-    }
-
+@media screen and (max-width: 400px) {
+  .socialImg,
+  .socialImg1 {
+    width: 45px;
+    height: 45px;
+  }
 }

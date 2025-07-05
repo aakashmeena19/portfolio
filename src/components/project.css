@@ -1,143 +1,103 @@
-#project{
-    min-height: cal(100vh - 4rem);
-    overflow: hidden;
-    width: 100vw;
-    max-width: 60rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 1 rem;
+.projects {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fff0f5, #ffe3ec);
+  text-align: center;
 }
 
-.projectTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1rem;
+.projectTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ec1055;
+  margin-bottom: 0.5rem;
 }
 
-.projectDesc{
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
-
+.projectDesc {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 3rem;
 }
 
-.project-item{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    max-width: 20rem;
-    position: relative;
-    background: white;
-    overflow: hidden;
-    margin: 1.5rem;
-    border-radius: 12px;
-    border:1px solid rgb(228, 75, 103);
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
-.item-details{
-    padding: 0rem 0rem 0rem;
-    width: 100%;
-    height: 25%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
- 
-    background:black;
-    border: 0.5px;
-    z-index: 10;
-
+.projectCard {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(236, 16, 85, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(236, 16, 85, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.projectImg{
-    object-fit: cover;
-    height: 20rem;
-    margin: auto;
-    width: 100%;
-    max-width: 50rem;
-
-    border: 1px;
-
-    z-index: 10;
-
-    border-radius: 12px;
-}
-.projectshadow{
-    box-shadow:rgb(236, 16, 85);
-box-shadow: 0 4px 6px -1px rgba(239, 9, 40, 0.1), 0 2px 4px -1px rgba(244, 10, 10, 0.06);
-
-}
-.item-details .P1{
-    text-align: center;
-    margin: 0.5rem 0.5rem;
-    font-size: 1.5rem;
-    letter-spacing: 0.8px;
+.projectCard:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(236, 16, 85, 0.25);
 }
 
-.item-details .P2{
-    text-align: center;
-    color:white;
-    margin-left: 0.8rem;
-    font-size: 1rem;
-    letter-spacing: 0.4px;
-    line-height: 0rem;
-    font-size: 1rem;
-    font-weight: 200;
+.projectImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.project-item:hover{
-    transition: all 0.2s;
-
-    transform: scale(1.1);
-   
+.projectInfo {
+  padding: 1.4rem 1.5rem;
+  text-align: left;
+  flex-grow: 1;
 }
 
+.projectInfo h3 {
+  font-size: 1.3rem;
+  color: #ec1055;
+  margin-bottom: 0.5rem;
+}
 
-     @media screen and (max-width: 720px){
-        .item-details .P1{
-            font-size: 3.3vw;
-        }
-        .item-details .P2{
-            font-size: 2.2vw ;
-        }
-     }
+.projectInfo p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
 
-     @media screen and (max-width:580px){
-        .item-details .P2{
-            font-size: 3vw;
-        }
+.projectLinks {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
 
-        .item-details .P1{
-            font-size: 4vw;
-        
-        }
-     }
+.projectLinks a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
 
+.btnLive {
+  background-color: #ec1055;
+  color: white;
+}
 
+.btnLive:hover {
+  background-color: #b80840;
+}
 
-  
+.btnCode {
+  background-color: white;
+  color: #ec1055;
+  border: 2px solid #ec1055;
+}
 
-/* 
-     @media  screen and (max-width: 430px) {
-        .projectTitle{
-            font-size: 11vw;
-        }
-        .item-details .p2{
-            font-size: 4vw;
-        }
-        .item-details .p1{
-            font-size: 5vw;
-        }
-
-        
-     } */
+.btnCode:hover {
+  background-color: #ec1055;
+  color: white;
+}
